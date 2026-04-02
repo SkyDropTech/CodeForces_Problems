@@ -1,7 +1,8 @@
-n=int(input())
-a=list(map(int,input().split()))
-for i in range(n):
-    if a[i]==1:
-        print(i)
-        break
-    
+n = int(input())
+
+if n <= 3:
+    print(-1)
+else:
+    for i in range(3, n+1):
+        print(i, end=" ")
+    print(1, 2)
